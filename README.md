@@ -8,3 +8,22 @@ For related repositories, please see:
 
 
 [analysis_release_002](https://github.com/emo-bon/analysis-results-cluster-02-crate): Bioinformatics pipeline outputs.
+
+
+## Step 1
+
+
+
+## Step 2
+
+
+## Step 3
+
+
+## Step 4
+
+
+## Step 5
+
+
+
