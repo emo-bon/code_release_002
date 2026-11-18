@@ -40,10 +40,14 @@ At the end, we have two complete files (one for the water samples and one for th
 
 The relevant script is Retrieve_AphiaIDs_taxonRanks.R
 
-## Step 4:
+## Step 4: Correct occurrence tables
 
+The way we have created our occurrence tables, we might have included occurrences with zero abundances in our sampling stations. 
+We could have corrected this earlier at Step 2, but we can also do it now and delete entries with zero abundance both from the occurrence as well as from the taxonomy tables. 
 
+At the end we have an updated occurrence table and an updated taxonomy table for each habitat (water and sediment).
 
+The relevant script is Correct_otu_tables.R
 
 ## Step 5:
 
