@@ -14,7 +14,7 @@ For related repositories, please see:
 
 Download the metaGOflow results and rename the files. 
 
-## Step 2:
+## Step 2: Create occurrence tables and taxonomy tables
 
 Open the files in R and create the basic files. In this script, you all also rename the samples so that they will have the correct source_mat_ids.
 By calling phyloseq functions, the occurrence tables, taxonomy tables and metadata tables are created and combined into phyloseq objects. 
@@ -23,15 +23,7 @@ Afterwards, they are saved as .tsv files for the next steps.
 
 The relevant script is EMOBON_metaGOflow.R
 
-
-## Step 3: 
-
-
-
-## Step 4:
-
-
-Retrieve AphiaIDs for taxa
+## Step 3: Retrieve AphiaIDs for taxa
 
 While we have tried different approaches to retrieve the AphiaIDs for the taxonomic occurrences, the most complete and accurate one is to download the genbank_links Parquet file from [EDITO](https://browser.moregeo.it/external/minio.dive.edito.eu/oidc-sfooks/worms_stac/marine_taxonomy/worms_taxonomy_traits/worms_taxonomy_traits.json?.asset=asset-genbank_links_parquet) and use it to retrieve the AphiaIDs based on their corresponding NCBI Taxonomy IDs. 
 
@@ -47,6 +39,11 @@ Also, an occurrenceRemarks column is added flagging the occurrences that are onl
 At the end, we have two complete files (one for the water samples and one for the sediment samples) containing the updated taxonomy with the AphiaID matches.  
 
 The relevant script is Retrieve_AphiaIDs_taxonRanks.R
+
+## Step 4:
+
+
+
 
 ## Step 5:
 
